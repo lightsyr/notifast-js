@@ -52,7 +52,7 @@ function notifast(args){
             backgroundColor: props.backgroundColor || '#FFF',
             link: props.link || '',
             soundEffect: props.soundEffect || '',
-            canBeClosed: props.canBeClosed || true,
+            canBeClosed: props.canBeClosed
         }
 
         //notification html template
@@ -77,15 +77,16 @@ function notifast(args){
         document.querySelector('.notifast-container').insertAdjacentHTML('beforeend', notificationTemplate)
         
         //check's if notification can be closed them add a close button to notification container
-        if(notification.canBeClosed){
+        
+        if(notification.canBeClosed == true){
             document.querySelector(`#${notification.id}`).insertAdjacentHTML('afterbegin',`
             <i class="fas fa-times-circle notifast-notification-close-button" style='color: ${notification.fontColor}'></i>`)
-
+            
             document.querySelector(`#${notification.id} .notifast-notification-close-button`).addEventListener('click',()=>{
                 deleteNotification(notification.id)
             })
         }
-
+        
         //create notification sound effect
         if(notification.soundEffect !== ''){
             let sfx = new Audio(`${notification.soundEffect}`)
