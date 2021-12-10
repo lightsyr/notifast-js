@@ -18,12 +18,19 @@
     <script>
         
         let notificationApp = notifast({ position: 'bottom-right' })
-        
-        notificationApp.emitNotification({
-            title: 'notification test!',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'   
-        })
+   
+        let notification = {
+            title: 'put your title here',
+            description: 'try to write anything here',
+            icon: '<i class="fas fa-bell"></i>',
+            backgroundColor: '#FFF',
+            fontColor: '#0F73FA',
+            link: 'https://youtu.be/dQw4w9WgXcQ',
+            canBeClosed: false
+        }
 
-    </script>
+        notificationApp.emitNotification(notification)
+
+</script>
 
 </html>

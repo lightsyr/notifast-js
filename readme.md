@@ -50,12 +50,12 @@ just need to call some functions passing the correct arguments and all work its 
     let notification = {
         title: 'put your title here',
         description: 'try to write anything here',
-        icon: '<i class="fas fa-bell"></i>'
+        icon: '<i class="fas fa-bell"></i>',
         backgroundColor: '#FFF',
         fontColor: '#0F73FA',
         link: 'https://youtu.be/dQw4w9WgXcQ',
         soundEffect: 'path/to/yourAudio.mp3',
-        canBeClose: true
+        canBeClosed: true
     }
 
     notificationApp.emitNotification(notification)
