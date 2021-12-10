@@ -9,6 +9,7 @@
     flex-direction: column-reverse;
     width: 320px;
     margin: 8px;
+    z-index: 99999;
 }
 
 .notifast-notification{
@@ -17,11 +18,6 @@
     font-size: 12px;
     margin-bottom: 8px;
 
-    span{
-        font-weight: bold;
-        font-size: 14px;
-    }
-
     a{
         width: 100%;
         text-decoration: none;
@@ -29,13 +25,26 @@
         align-items: center;
     }
 
-    p{
-        margin: 0;
-    }
 
     i{
         font-size: xx-large;
         margin-right: 12px;
+    }
+
+    .notifast-notification-body{
+        i{
+            font-size: unset;
+            margin: 0;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        span{
+            font-weight: bold;
+            font-size: 14px;
+        }
     }
 
     .notifast-notification-close-button{

@@ -66,7 +66,7 @@ function notifast(args){
                 href='${notification.link}' 
                 target='_blank' style='color: ${notification.fontColor}'>
                     ${notification.icon}
-                    <div>
+                    <div class='notifast-notification-body'>
                         <span>${notification.title}</span>
                         <p>${notification.description}</p>
                     </div>
