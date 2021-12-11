@@ -1,5 +1,4 @@
-# Notifast - A simple javascript library for notifications
-
+# Notifast - A tiny javascript library for notifications
 
 ## Instalation
 
